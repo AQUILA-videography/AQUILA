@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aquila - Visites Immobilières en FPV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  />
   <style>
     html {
       scroll-behavior: smooth;
     }
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       background-color: #000;
       color: #fff;
+      text-align: center;
     }
     header {
       background: #fff;
@@ -28,302 +32,97 @@
       margin: auto;
       margin-bottom: 2rem;
     }
-    nav {
-      margin-top: 2rem;
-    }
-    nav a {
-      color: #000;
-      text-decoration: none;
-      margin: 0 2rem;
-      font-weight: 600;
-      font-size: 2.2rem;
-    }
-    h2 {
-      font-size: 2.2rem;
-      text-align: center;
-    }
     .section {
-      background-color: #000;
-      color: #fff;
-      padding: 3rem 1rem;
-      max-width: 1000px;
+      padding: 4rem 2rem;
+      max-width: 1400px;
       margin: auto;
-      text-align: center;
     }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
+    .work-in-progress {
+      font-size: 2rem;
+      margin: 4rem 0;
     }
-    .feature {
-      background: #1a1a1a;
-      color: #fff;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    /* --- Contact --- */
+    #contact p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 1rem auto;
     }
-    .cta {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .cta a {
-      background: #000;
-      color: #fff;
-      padding: 1rem 2rem;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .video-container video {
-      width: 100%;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .video-container video:hover {
-      outline: 3px solid #666;
+    form {
+      max-width: 650px;
+      margin: 3rem auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0 1rem;
     }
     form input,
     form textarea {
       background: #222;
       border: 1px solid #555;
       color: #fff;
-      padding: 0.75rem;
-      border-radius: 0.5rem;
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+      padding: 1rem;
+      border-radius: 0.7rem;
+      font-family: "Inter", sans-serif;
+      font-size: 1.1rem;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus,
+    form textarea:focus {
+      border-color: #888;
+      outline: none;
     }
     form button {
-      padding: 1rem;
+      padding: 1.2rem;
       background: #fff;
       color: #000;
       border: none;
-      border-radius: 0.5rem;
-      font-weight: bold;
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+      border-radius: 0.7rem;
+      font-weight: 700;
+      font-family: "Inter", sans-serif;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
-    footer {
-      background: #f5f5f5;
-      color: #444;
-      text-align: center;
-      padding: 2rem;
-      margin-top: 4rem;
+    form button:hover {
+      background-color: #ddd;
     }
-.responsive-video {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.responsive-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Aquila">
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#realisations">Réalisations</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <img src="images/logo.png" alt="Logo Aquila" />
   </header>
 
-
-
-  <section class="section" id="services">
-    <h2>Nos Services</h2>
-    <p><strong>Valorisation du bien </strong>:
-Plonger le spectateur dans une visite immersive, fluide et dynamique du bien donnant une vision claire de l’architecture, de l’environnement et des volumes.
-</p>
-
-  <p><strong>Différenciation sur le marché</strong> :
-Service immobilier moderne, innovant et haut de gamme.
-</p>
-
-  <p><strong>Accélération du processus de vente</strong> :
-Visuels de qualités et captivants attirent plus de clics, plus de visites qualifiées et réduisent le temps de commercialisation des biens.
-</p>
-
-  <p><strong>Renforcez votre image de marque</strong> : vous montrez que vous innovez et que vous investissez pour vos clients.</p>
-    <div class="features">
-      <div class="feature">
-        <h3>Qualité</h3>
-        <p>Vidéos professionnelles en 4K 100ips stabilisées</p>
-      </div>
-      <div class="feature">
-        <h3>Innovation</h3>
-        <p>Chaque détail est mis en valeur avec finesse, du sol au plafond.</p>
-      </div>
-      <div class="feature">
-        <h3>Optimisé pour le web</h3>
-        <p>Parfait pour YouTube, Instagram, TikTok, et les sites d'agences.</p>
-      </div>
-    </div>
+  <!-- Work in Progress -->
+  <section class="section">
+    <p class="work-in-progress">Site en construction… Revenez bientôt !</p>
   </section>
 
-  <section class="section" id="realisations">
-    <h2>Réalisations</h2>
-    <p>Voici quelques extraits de nos vidéos. Passez la souris pour les lancer automatiquement.</p>
-    <div class="video-grid">
-      <div class="video-container responsive-video">
-        <iframe 
-  width="100%" 
-  height="315" 
-  src="https://www.youtube.com/embed/uYWeN-nZVGc" 
-  title="Vidéo YouTube" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
-
-      </div>
-      <div class="video-container responsive-video">
-        <iframe 
-  width="100%" 
-  height="315" 
-  src="https://www.youtube.com/embed/sPU0-Sv0-_E" 
-  title="Vidéo YouTube" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
-
-      </div>
-      <div class="video-container responsive-video">
-        <iframe 
-  width="100%" 
-  height="315" 
-  src="https://www.youtube.com/embed/4lVD0U22ftc" 
-  title="Vidéo YouTube" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
-
-      </div>
-    </div>
-  </section>
-
+  <!-- Contact -->
   <section class="section" id="contact">
     <h2>Contactez-nous</h2>
-    <p>Envoyez-nous les informations sur votre bien et recevez une proposition personnalisée.</p>
-<p>Ou contactez-nous pour toute autre demande</p>
-    <form 
-  action="https://formspree.io/f/mrbkvzoo" 
-  method="POST"
-  style="max-width:600px;margin:auto;display:flex;flex-direction:column;gap:1rem;">
-  
-  <input type="text" name="nom" placeholder="Nom / Agence" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <textarea name="message" placeholder="Décrivez le bien à filmer (lieu, surface, type...)" rows="5" required></textarea>
-  <button type="submit">Envoyer</button>
-</form>
-
-<style>
-  body {
-    background-color: #000; /* Optionnel : fond noir pour toute la page */
-    color: #fff;
-    font-family: Arial, sans-serif;
-  }
-
-  #mentions-legales {
-    display: none;
-    margin-top: 1rem;
-    padding: 1.5rem;
-    background-color: #000; /* fond noir */
-    border: 1px solid #444; /* bordure discrète */
-    color: #fff; /* texte blanc */
-    line-height: 1.6;
-  }
-
-  .toggle-mentions {
-    background-color: #000; /* bouton noir */
-    color: white;
-    border: 1px solid #fff;
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
-  }
-
-  .toggle-mentions:hover {
-    background-color: #222; /* noir un peu plus clair au survol */
-  }
-
-  #mentions-legales h2,
-  #mentions-legales h3 {
-    color: #fff;
-  }
-</style>
-
-<!-- Bouton pour afficher/masquer les mentions légales -->
-<button class="toggle-mentions" onclick="toggleMentions()">Mentions légales</button>
-
-<!-- Bloc de mentions légales -->
-<section id="mentions-legales">
-  <h2>Mentions légales</h2>
-
-  <h3>1. Éditeur du site</h3>
-  <p>
-    Nom : AQUILA<br>
-    Statut : Micro-entreprise<br>
-    Adresse : Adresse personnelle de l’éditeur : communiquée sur demande légitime.<br>
-    Email : romain.bernal@orange.fr<br>
-    SIRET : 989 347 935 00011<br>
-    Responsable de la publication : Dirigeant
-  </p>
-
-  <h3>2. Hébergement du site</h3>
-  <p>
-    Ce site n'est pas encore hébergé. Les informations relatives à l'hébergeur seront communiquées lors de la mise en ligne.
-  </p>
-
-  <h3>3. Propriété intellectuelle</h3>
-  <p>
-    L’ensemble du contenu présent sur ce site (textes, images, logos, éléments graphiques) est la propriété exclusive de AQUILA, sauf mention contraire. Toute reproduction, représentation, modification, publication, transmission, ou dénaturation, totale ou partielle, du site ou de son contenu, par quelque procédé que ce soit, est interdite sans autorisation préalable.
-  </p>
-
-  <h3>4. Données personnelles</h3>
-  <p>
-    Ce site ne collecte aucune donnée personnelle sans votre consentement. Si un formulaire de contact est ajouté ultérieurement, une politique de confidentialité spécifique sera mise en place.
-  </p>
-
-  <h3>5. Cookies</h3>
-  <p>
-    Ce site ne dépose actuellement aucun cookie.
-  </p>
-</section>
-
-<script>
-  function toggleMentions() {
-    const mentions = document.getElementById("mentions-legales");
-    if (mentions.style.display === "none" || mentions.style.display === "") {
-      mentions.style.display = "block";
-    } else {
-      mentions.style.display = "none";
-    }
-  }
-</script>
-
-
-
+    <p>
+      Envoyez-nous les informations sur votre bien et recevez une proposition
+      personnalisée.
+    </p>
+    <p>Ou contactez-nous pour toute autre demande</p>
+    <form
+      action="https://formspree.io/f/mrbkvzoo"
+      method="POST"
+      autocomplete="off"
+    >
+      <input type="text" name="nom" placeholder="Nom / Agence" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea
+        name="message"
+        placeholder="Décrivez le bien à filmer (lieu, surface, type...)"
+        rows="5"
+        required
+      ></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
 </body>
 </html>
